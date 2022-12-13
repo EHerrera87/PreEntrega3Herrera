@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nosotros {
+    background-color: #8ECAE6;
+    text-align: center;
+    padding-bottom: 10px;
+    h1 {
+        color: $fontcolor;
+        text-transform: uppercase;
+        letter-spacing: 20px;
+        word-spacing: 10px;
+        padding-top: 20px;
+    }
+    h2 {
+        color: $fontcolor;
+        letter-spacing: 10px;
+        word-spacing: 5px;
+        padding-top: 10px;
+    }
+    p {
+        color: $fontcolor;
+        letter-spacing: 4px;
+        word-spacing: 2px;
+        padding-top: 6px;
+    }
+}
+.productos {
+    background-color: $bgprod;
+    text-align: center;
+    padding-bottom: 10px;
+    p {
+        color: $fontcolor;
+        letter-spacing: 4px;
+        word-spacing: 2px;
+        padding-top: 6px;
+    }
+}
+section {
+    h2 {
+        color: $fontcolor;
+        text-transform: uppercase;
+        letter-spacing: 20px;
+        word-spacing: 10px;
+        padding-top: 20px;
+    }
+}
+.box{
+    background-color: $bgprod;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transform: translateY(20px);
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+}
+
+.serv {
+    color: $fontcolor;
+    border-radius: 8px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    p{
+        padding: 20px;
+        text-align: center;
+    }
+    &:hover{
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+.distri, .customizacion, .mantenimiento, .modificacion, .reparacion {
+  border-radius: 20px;
+}
+.distri:hover, .customizacion:hover, .mantenimiento:hover, .modificacion:hover, .reparacion:hover {
+  background-color: #FB8500;
+}
+
+.servicios {
+  width: 230px;
+  height: 300px;
+}
+
+/* profe el mixin me rompe responsive del grid areas*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nosotros {
+  background-color: #8ECAE6;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.nosotros h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  word-spacing: 10px;
+  padding-top: 20px;
+}
+.nosotros h2 {
+  color: white;
+  letter-spacing: 10px;
+  word-spacing: 5px;
+  padding-top: 10px;
+}
+.nosotros p {
+  color: white;
+  letter-spacing: 4px;
+  word-spacing: 2px;
+  padding-top: 6px;
+}
+
+.productos {
+  background-color: #8ECAE6;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.productos p {
+  color: white;
+  letter-spacing: 4px;
+  word-spacing: 2px;
+  padding-top: 6px;
+}
+
+section h2 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  word-spacing: 10px;
+  padding-top: 20px;
+}
+
+.box {
+  background-color: #8ECAE6;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transform: translateY(20px);
+}
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.serv {
+  color: white;
+  border-radius: 8px;
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+.serv p {
+  padding: 20px;
+  text-align: center;
+}
+.serv:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  background-color: #219EBC;
+}
+nav a img {
+  border-style: double;
+  border-width: 8px;
+  border-radius: 100px;
+}
+nav ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 2px;
+  display: inline;
+  margin-right: 20px;
+  color: white;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition-property: all;
+  transition-duration: 0.6s;
+}
+
+/* GRID AREAS DE SERVICIOS*/
+.contenedor {
+  display: grid;
+  width: 100%;
+  height: 400px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 10px;
+  grid-template-areas: "reparacion modificacion mantenimiento customizacion";
+}
+
+.reparacion {
+  grid-area: reparacion;
+  background-color: rgb(99, 99, 180);
+}
+
+.modificacion {
+  grid-area: modificacion;
+  background-color: rgb(75, 169, 94);
+}
+
+.mantenimiento {
+  grid-area: mantenimiento;
+  background-color: rgb(95, 85, 41);
+}
+
+.customizacion {
+  grid-area: customizacion;
+  background-color: rgb(157, 78, 167);
+}
+
+.contenedor > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MEDIA QUERIES DE SERVICIOS*/
+@media screen and (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "reparacion     modificacion" "mantenimiento  customizacion";
+  }
+}
+@media screen and (max-width: 576px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "reparacion" "modificacion" "mantenimiento" "customizacion";
+  }
+}/*# sourceMappingURL=style.css.map */

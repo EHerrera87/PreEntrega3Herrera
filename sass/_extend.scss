@@ -1,0 +1,22 @@
+.distri {
+    border-radius: 20px;
+    &:hover {
+        background-color: #FB8500;
+    }
+}
+
+.reparacion {
+    @extend .distri ;
+}
+
+.modificacion {
+    @extend .distri ;
+}
+
+.mantenimiento {
+    @extend .distri ;
+}
+
+.customizacion {
+    @extend .distri ;
+}

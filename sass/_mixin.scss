@@ -1,0 +1,10 @@
+@mixin  caja($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+.servicios {
+    @include caja (230px, 300px);
+}
+
+/* profe el mixin me rompe responsive del grid areas*/
